@@ -26,7 +26,7 @@ def pytest_addoption(parser):
 
 def pytest_configure(config):
     if config.option.mccabe:
-        config.addinivalue_line('markers', 'mccabe: Tests which run mccabe checks')
+        config.addinivalue_line('markers', 'mccabe: Tests which run mccabe')
 
 
 def pytest_sessionstart(session):
